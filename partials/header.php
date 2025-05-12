@@ -9,12 +9,18 @@
 </head>
 
 <body>
+
     <header>
-        <h1>L'Atelier du Bois</h1>
+
         <nav>
+            <div id="company-logo">
+                AdB
+            </div>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
+
+
     </header>
