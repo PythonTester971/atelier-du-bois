@@ -4,14 +4,16 @@
   --tertiary-bg-color: #dcbb96;
   --main-text-color: #fff;
   --button-color: #6e0606;
+  --font-family: "Roboto", sans-serif;
 }
 
 body {
   display: grid;
   grid-template-rows: 100px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   height: 100vh;
+  /* font-size: 1em; */
 }
 
 
@@ -19,7 +21,7 @@ main {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   align-items: center;
   text-align: center;
   padding: 20px;
@@ -46,41 +48,76 @@ textarea {
   width: 100%;
 }
 
+button[type="submit"] {
+
+  background-color: var(--button-color);
+  /* max-width: 50%;
+  height: 60%; */
+  color: var(--main-text-color);
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+
+}
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid 1px black;
-  border-radius: 10px;
-  background-color: var(--secondary-bg-color);
-  padding: 10px;
-  width: 70%;
-  height: 200px;
+  /* border: solid 1px black; */
+  border-radius: 5px;
+  /* background-color: var(--secondary-bg-color); */
+  padding: 2px;
+
+  /* height: 160px; */
   color: var(--main-text-color);
 
 }
 
 .section-bg {
-  width: 80%;
-  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  min-width: 400px;
+  min-height: 200px;
   border-radius: 5px;
-  background-color: var(--tertiary-bg-color);
   padding-right: 10px;
   padding-left: 10px;
-
 }
 
-p .savoir-plus {
+#bg-woodworker {
+  background-image: url(../img/2149451051.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-plank {
+  background-image: url(../img/charpentier-coupant-le-panneau-de-forces-de-defense-principale-a-l-interieur-de-l-atelier.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#bg-sculpture {
+  background-image: url(../img/le-charpentier-travaille-avec-un-arbre.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+p .savoir-plus,
+#contact-link {
   background-color: var(--button-color);
   max-width: 50%;
-  height: 60%;
+  height: 50%;
   color: var(--main-text-color);
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
-  padding: 5px;
+  padding: 3px;
 }
 
 header {
@@ -104,13 +141,17 @@ nav {
 }
 
 nav #company-logo {
-  border-right: solid 1px black;
+  border-right: solid 1px var(--main-bg-color);
   padding: 20px;
-  font-size: 1em;
+  font-size: 30px;
   font-weight: bold;
   color: var(--main-text-color);
 }
 
+nav #company-logo a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
 
 nav ul li {
   display: inline;
@@ -137,4 +178,46 @@ footer {
   color: var(--main-text-color);
   /* position: fixed;
   bottom: 0px; */
+}
+
+@media (width > 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* font-size: 1em; */
+  }
+
+  nav #company-logo {
+    font-size: larger;
+  }
+
+  main {
+    padding-bottom: 5px;
+    gap: 5px;
+
+  }
+
+  section {
+    /* width: 98%; */
+    border: none;
+    border-radius: 0px;
+    /* height: 300px; */
+  }
+
+  .section-bg {
+    width: 100%;
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  input,
+  textarea {
+    width: 70%;
+    margin-bottom: 5px;
+  }
+
 }

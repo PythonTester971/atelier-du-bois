@@ -14,11 +14,11 @@
 
         <nav>
             <div id="company-logo">
-                AdB
+                <a href="index.php">AdB</a>
             </div>
             <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <!-- <li><a href="index.php">Accueil</a></li>-->
+                <li><a href="contact.php" id="contact-link">Contact</a></li>
             </ul>
         </nav>
 

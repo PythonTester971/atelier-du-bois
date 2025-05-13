@@ -10,7 +10,7 @@
 
         <label for="message">Votre message</label>
 
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" rows="10" required></textarea>
 
         <button type="submit">Envoyer</button>
     </form>
