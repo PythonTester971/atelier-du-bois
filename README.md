@@ -21,5 +21,5 @@ Ce projet a été réalisé dans le cadre d'une situation professionnelle visant
   - img/
 
 ## Déploiement
-Ce site est hébergé via GitHub Pages.
+~~Ce site est hébergé via GitHub Pages.~~
 
